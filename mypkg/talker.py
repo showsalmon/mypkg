@@ -9,12 +9,13 @@ class Talker():
     def __init__(self, node):
         self.pub = node.create_publisher(Int16, "countup", 10)
         self.fib, self.a, self.b = 0, 0, 1
-        self.n = 0
+        self.n = 1
         node.create_timer(1.0, self.cb)
 
     def cb(self):
         msg = Int16()
-        msg.data = self.n
+        if self.n == 1:
+            msg.data = 1
         self.pub.publish(msg)
         self.n += 1
 
