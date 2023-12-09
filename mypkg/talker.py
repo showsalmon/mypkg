@@ -16,6 +16,11 @@ class Talker():
         msg = Int16()
         if self.n == 1:
             msg.data = 1
+        else:
+            self.fib = self.a + self.b
+            msg.data = self.fib
+            self.a = self.b
+            self.b = self.fib
         self.pub.publish(msg)
         self.n += 1
 
