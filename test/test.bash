@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyfightText: 2023 Sho Haneishi
+# SPDX-FileCopyrightText: 2023 Sho Haneishi
 # SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
