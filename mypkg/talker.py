@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 sho Haneishi
+# SPDX-FileCopyrightText: 2023 Sho Haneishi
 # SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
