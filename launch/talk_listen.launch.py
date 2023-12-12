@@ -1,5 +1,5 @@
-#SPDX-FileCopyrightText: 2023 Sho Haneishi
-#SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2023 Sho Haneishi
+# SPDX-License-Identifier: BSD-3-Clause
 
 import launch
 import launch.actions
