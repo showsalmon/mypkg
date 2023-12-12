@@ -25,6 +25,7 @@
 [INFO] [1702362512.155917687] [listener]: Listen: 8
 ・・・
 ```
+* 終了する時はCtrl+Z
 
 ### launchで起動する場合
 ```bash
@@ -41,6 +42,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1702363110.018394139] [listener]: Listen: 8
 ・・・
 ```
+* 終了する時はCtrl+Z
 
 ## 必要なソフトウェア
 * Python
