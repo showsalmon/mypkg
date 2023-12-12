@@ -3,13 +3,13 @@
 * このリポジトリは、ロボットシステム学で学んだROS2を使った練習リポジトリです。
 
 # このリポジトリ内のノード
-* talker.py
-  * self.nが1の時はmsg.dataに1を代入し、self.nが2以上の時はsel.aとself.bを足し、msg.dataに代入してフィボナッチ数列を計算します.その計算したフィボナッチ数列を1秒ごとメッセージとして送信します.
-* listener.py
-  * talker.pyから送信されたメッセージを受信して画面に出力します.
+talker.py
+* self.nが1の時はmsg.dataに1を代入し、self.nが2以上の時はsel.aとself.bを足し、msg.dataに代入してフィボナッチ数列を計算します.その計算したフィボナッチ数列を1秒ごとメッセージとして送信します.
+listener.py
+* talker.pyから送信されたメッセージを受信して画面に出力します.
 
-* talk_listen.launch.py
-  * 一つの端末でtalker.pyとlistener.pyを一度に立ち上げます.
+talk_listen.launch.py
+* 一つの端末でtalker.pyとlistener.pyを一度に立ち上げます.
 
 ## 必要なソフトウェア
 * Python
