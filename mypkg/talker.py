@@ -7,12 +7,12 @@ from std_msgs.msg import Int32
 
 class Talker():
     def __init__(self, node):
-        self.pub = node.create_publisher(Int32, "countup", 10)
+        self.pub = node.create_publisher(Int32, "fibonacci", 10)
         self.fib, self.a, self.b = 0, 0, 1
         self.n = 1
-        node.create_timer(1.0, self.cb)
+        node.create_timer(1.0, self.fibo)
 
-    def cb(self):
+    def fibo(self):
         msg = Int32()
         if self.n == 1:
             msg.data = 1
