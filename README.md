@@ -3,18 +3,18 @@
 * このリポジトリは、ロボットシステム学で学んだROS2を使った練習リポジトリです.
 
 ## このリポジトリ内のノード
-### talker.py
+### fibonacci.py
 * self.nが1の時はmsg.dataに1を代入し、self.nが2以上の時はsel.aとself.bを足し、msg.dataに代入してフィボナッチ数列を計算します.その計算したフィボナッチ数列を1秒ごとメッセージとして送信します.
 ### listener.py
-* talker.pyから送信されたメッセージを受信して画面に出力します.
+* fibonacci.pyから送信されたメッセージを受信して画面に出力します.
 
-### talk_listen.launch.py
-* 一つの端末でtalker.pyとlistener.pyを一度に立ち上げます.
+### fibonacci_listen.launch.py
+* 一つの端末でfibonacci.pyとlistener.pyを一度に立ち上げます.
 
 ## 実行方法
-### talkerとlistenerで起動する場合
+### fibonacciとlistenerで起動する場合
 ```bash
-端末1$ ros2 run mypkg taker
+端末1$ ros2 run mypkg fibonacci
 (何も出力されません)
 
 端末2$ ros2 run mypkg listener
@@ -25,11 +25,11 @@
 [INFO] [1702362512.155917687] [listener]: Listen: 8
 ・・・
 ```
-* 終了する時は`Ctrl+Z`
+* 終了する時は`Ctrl+C`
 
 ### launchで起動する場合
 ```bash
-$ ros2 launch mypkg talk_listen.launch.py
+$ ros2 launch mypkg fibonacci_listen.launch.py
 [INFO] [launch]: All log files can be found below /home/haneishi/.ros/log/2023-12-12-15-38-23-764391-Haneishi-30094
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [30096]
@@ -42,7 +42,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1702363110.018394139] [listener]: Listen: 8
 ・・・
 ```
-* 終了する時は`Ctrl+Z`
+* 終了する時は`Ctrl+C`
 
 ## 必要なソフトウェア
 * Python
