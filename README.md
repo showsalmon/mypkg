@@ -1,6 +1,6 @@
 # mypkg
 [![test](https://github.com/showsalmon/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/showsalmon/mypkg/actions/workflows/test.yml)
-* このリポジトリは、ロボットシステム学で学んだROS2を使った練習リポジトリです。
+* このリポジトリは、ロボットシステム学で学んだROS2を使った練習リポジトリです.
 
 ## このリポジトリ内のノード
 ### talker.py
