@@ -5,14 +5,14 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
 
-class Talker():
+class Fibonacci():
     def __init__(self, node):
-        self.pub = node.create_publisher(Int32, "fibonacci", 10)
+        self.pub = node.create_publisher(Int32, "fibonacci_sequence", 10)
         self.fib, self.a, self.b = 0, 0, 1
         self.n = 1
-        node.create_timer(1.0, self.fibo)
+        node.create_timer(1.0, self.pub_fibo)
 
-    def fibo(self):
+    def pub_fibo(self):
         msg = Int32()
         if self.n == 1:
             msg.data = 1
@@ -26,8 +26,8 @@ class Talker():
 
 def main():
     rclpy.init()
-    node = Node("talker")
-    talker = Talker(node)
+    node = Node("fibonacci")
+    fibonacci = Fibonacci(node)
     rclpy.spin(node)
 
 if __name__ == '__main__':
